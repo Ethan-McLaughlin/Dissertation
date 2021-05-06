@@ -1,6 +1,7 @@
-#Necessary Tokens
+#Necessary Packages
 library(textclean)
 library(readxl)
+library(writexl)
 DataClean <- read_xlsx("DATA")
 #Cleaning the Text and removing excess Tokens
 DataClean$no1 <-gsub("@","", RedditWSBTrain3$title) #remove @
