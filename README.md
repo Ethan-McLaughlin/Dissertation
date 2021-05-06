@@ -1,2 +1,2 @@
 # Dissertation
-This repository contains all the code utilised for my dissertation.
+This repository contains all the code and workflows utilised for my dissertation.
