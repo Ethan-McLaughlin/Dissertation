@@ -19,13 +19,13 @@ DataClean$no11 <- gsub("","", RedditWSBTrain3$no10)
 DataClean$no12 <- gsub("","", RedditWSBTrain3$no11)
 DataClean$no13 <- gsub("|","", RedditWSBTrain3$no12)
 DataClean$no14 <- gsub("","", RedditWSBTrain3$no13)
-DataClean$no15 <- gsub("-&gt;", " to ", RedditWSBTrain3$no14)
+DataClean$no15 <- gsub("-&gt;", " to ", RedditWSBTrain3$no14) #removed specifc emoticon
 DataClean$no16 <- gsub("&", "and ", RedditWSBTrain3$no15)
-DataClean$no17 <- gsub("http[^[:space:]]*", "", RedditWSBTrain3$no16)
+DataClean$no17 <- gsub("http[^[:space:]]*", "", RedditWSBTrain3$no16) #Removed specific emoticon
 DataClean$no18 <- gsub("r/","", RedditWSBTrain3$no17)
 DataClean$no19 <- gsub("yolo", "you only live once", RedditWSBTrain3$no18)
-DataClean$no20 <- gsub("amp;utm[^[:space:]]*", "", RedditWSBTrain3$no19)
-DataClean$no21 <- gsub("amp;context[^[:space:]]*","", RedditWSBTrain3$no20)
+DataClean$no20 <- gsub("amp;utm[^[:space:]]*", "", RedditWSBTrain3$no19)#Removed specific emoticon
+DataClean$no21 <- gsub("amp;context[^[:space:]]*","", RedditWSBTrain3$no20)#Removed specific emoticon
 DataClean$no22 <- gsub("*", "", RedditWSBTrain3$no21)
 DataClean$no23 <- gsub("~", "", RedditWSBTrain3$no22)
 DataClean$Cleanedtext<- gsub("u/", "", RedditWSBTrain3$no23)
